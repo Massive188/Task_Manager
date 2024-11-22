@@ -1,4 +1,12 @@
-int main() {
-    std::cout << "Hello, world!" << std::endl;
-    return 0;
+#include <QApplication>
+#include <QLabel>
+
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+
+    QLabel label;
+    label.setText("Hello, World!");
+    label.show();
+
+    return app.exec();
 }
